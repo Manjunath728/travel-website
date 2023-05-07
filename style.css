@@ -8,6 +8,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+
 /* Navbar Start */
 #navbar{
     background: #f9f9f9;
@@ -265,6 +266,18 @@
     color: white;
     border-radius: 5px;
 }
+.hiddenX{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-30%);
+}
+.hiddenY{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(30%)
+}
+
+
 /* Section Packages End */
 
 
@@ -291,6 +304,10 @@
 }
 .services .card .card-body{
     text-align: center;
+}
+.pop{
+    scale: 0.3;
+    transition: all .5s ease ;
 }
 /* Section Services End */
 
@@ -377,7 +394,7 @@
     cursor: pointer;
 }
 #about-btn:hover{
-    width: 170px;
+    width: 300px;
 }
 @media (max-width:765px){
     .about{
@@ -419,3 +436,11 @@
     background: #ffa500;
 }
 /* Footer End */
+
+
+.show{
+    opacity: 1;
+    transform: translateX(0%);
+    scale: 1;
+    
+}
