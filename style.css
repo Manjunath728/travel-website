@@ -13,6 +13,10 @@
   --on-background: rgb(7, 7, 7);
   --on-background-alt: rgba(67, 67, 67, 0.7);
 }
+body {
+  overflow-x: hidden;
+}
+
 
 * {
   margin: 0;
@@ -439,6 +443,7 @@ input:checked + .slider:before {
 .services .card .card-body {
   text-align: center;
 }
+
 .pop {
   scale: 0.3;
   transition: all 0.5s ease;
@@ -677,3 +682,6 @@ deatils of place
   border: 1px solid #ccc;
 }
 
+.legend div{
+  font-weight: 500;
+}
