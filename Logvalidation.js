@@ -58,12 +58,14 @@ if(p == ""){
     pass.style.borderBottom = 'none'
 }
 
-sub.addEventListener('click',(e)=>{
-    e.preventDefault()
-    if(n.match(npatt) && p.match(ppatt)){
-        alert(`Welcome ${n}`)
+document.getElementById("myForm").addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (n.match(npatt) && p.match(ppatt)) {
+      alert(`Welcome ${n}`);
+      window.location.href = "index.html";
     }
-})
+  });
+  
 
 
 // cp = cp.substring(0,cp.length-2);
