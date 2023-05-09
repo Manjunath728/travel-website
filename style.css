@@ -407,6 +407,12 @@ input:checked + .slider:before {
   transform: translateX(30%);
 }
 
+.fade{
+  opacity: 0;
+  transition: all 3s;
+  
+}
+
 /* Section Packages End */
 
 /* Section Services Start */
@@ -486,7 +492,7 @@ input:checked + .slider:before {
 /* About Start */
 .about {
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 050px;
   background: var(--on-background);
 }
 .about .card {
@@ -639,4 +645,26 @@ input:checked + .slider:before {
 
 .review .text {
   line-height: 1.5em;
+}
+
+/*
+
+deatils of place
+
+*/
+#cursor {
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
