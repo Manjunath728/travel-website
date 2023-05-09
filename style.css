@@ -668,3 +668,12 @@ deatils of place
     opacity: 0;
   }
 }
+/*d3 js*/
+
+.legend {
+  width: 16px;
+  
+  height: 16px;
+  border: 1px solid #ccc;
+}
+
