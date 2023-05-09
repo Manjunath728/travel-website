@@ -58,6 +58,15 @@ if(p.match(ppatt)){
 if(p == ""){
     pass.style.borderBottom = 'none'
 }
+
+// if(cp == p){
+//     console.log(cp,p)
+// }else{
+//     // console.log('wrong ',cp,p)
+//         document.getElementById('errp').innerText= 'Password not mathching'
+
+// }
+
 // cp = cp.substring(0,cp.length-2);
 //confirm
 // if(cp == p){
@@ -78,11 +87,11 @@ if(p == ""){
  if(e.match(epatt)){
     // form.classList.add("valid")
     email.style.borderBottom = '5px solid green'
-    console.log("coorect");
+    // console.log("coorect");
  }else{
     email.style.borderBottom = '5px solid red'
     email.classList.add("invalid")
-    console.log('wrong');
+    // console.log('wrong');
  }
 if(e == ""){
     email.style.borderBottom = 'none'
@@ -107,9 +116,17 @@ console.log(number.match(numpatt))
 
 sub.addEventListener('click',(event)=>{
     event.preventDefault()
-    if(n.match(npatt) && p.match(ppatt) && e.match(epatt)){
-        window.alert('huu')
-    }
+    if(cp === p){
+        console.log(cp,p)
+        // pass
+    }else{
+        // document.getElementById('errp').innerText= 'Password not mathching'
+        console.log('wrong')}
+        // console.log('wrong ',cp,p)
+    // }
+    // if(n.match(npatt) && p.match(ppatt) && e.match(epatt)){
+    //     window.alert('huu')
+    // }
     // console.log('hii')
 })
 
