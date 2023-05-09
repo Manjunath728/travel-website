@@ -26,8 +26,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <!-- Google Fonts -->
   <style>
-    
-
     /* #myForm input {
       border-bottom: 6px solid rgb(7, 255, 7);
 
@@ -46,7 +44,7 @@
 <body>
   <!--nav bar-->
   <nav class="navbar navbar-expand-lg navbar" id="navbar">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span><i class="fa-solid fa-bars"></i></span>
@@ -54,11 +52,11 @@
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto ">
           <li class="nav-item px-2">
-            <a class="nav-link" href="index.html" disabled>Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
-          <li class="nav-item px-2">
-            <a class="nav-link active" href="book.html">Book</a>
-          </li>
+          <!-- <li class="nav-item px-2">
+            <a class="nav-link" href="book.html">Book</a>
+          </li> -->
           <li class="nav-item px-2">
             <a class="nav-link" href="#packages">Packages</a>
           </li>
@@ -71,7 +69,12 @@
           <li class="nav-item px-2">
             <a class="nav-link" href="#about">About</a>
           </li>
-
+          <li class="nav-item px-2">
+            <a class="nav-link" href="Login.html">Login</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="Register.html">Register</a>
+          </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2 " type="text" id="search" placeholder="Search">
@@ -79,8 +82,8 @@
           <!-- <button class="btn btn-primary px-2" id="dark"  onclick="darkMode()"type="button">Search</button> -->
         </form>
         <!-- <span id="toggle-icon ms-3">
-        <i class="fas fa-sun"></i>
-      </span> -->
+          <i class="fas fa-sun"></i>
+        </span> -->
         <label class="switch ms-2">
           <input type="checkbox" />
           <span class="slider round"></span>
@@ -111,11 +114,6 @@
         <div class="col-md-6 py-3 py-md-0">
           <form id="myForm" action="#">
 
-            <input type="text" class="form-control " id="name" placeholder="Name" onkeydown="validate()" required>
-            <span id="err"></span><br>
-            <input type="email" id="email" onkeydown="validate()" class="form-control" name="email" placeholder="Email"
-              id="email" required>
-            <span id="err"></span><br>
             <input type="text" class="form-control " placeholder="Where To" required><br>
             <input type="text" class="form-control" placeholder="How Many" required><br>
             <input type="date" id="date" class="form-control" placeholder="Arrivals" required><br>

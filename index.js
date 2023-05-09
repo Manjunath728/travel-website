@@ -14,49 +14,9 @@ console.log(hiddenElementsX);
 hiddenElementsX.forEach((element) => {
   observer.observe(element);
 });
-// var mode = "light";
-
-// function darkMode() {
-//   if (mode == "light") {
-//     mode = "dark";
-//     document.getElementsByTagName("body")[0].style.backgroundColor = "#082032";
-//     document.getElementById("navbar").style.backgroundColor = "#082032";
-//     document.getElementById("logo").style.color = "white";
-//     document.querySelectorAll(".nav-link,.nav-item").forEach((ele) => {
-//       ele.style.color = "white";
-//       console.log("done");
-//     });
-//     document.querySelectorAll(".book,.card,.packages").forEach((ele) => {
-//       ele.style.backgroundColor = "#082032";
-//       ele.style.color = "white";
-//       ele.style.textShadow = "0px 1px 1px black";
-
-//       console.log(ele);
-//     });
-//   } else {
-//     mode = "light";
-//     document.getElementById("navbar").style.backgroundColor = "#f9f9f9";
-//     document.getElementById("logo").style.color = "black";
-//     document.querySelectorAll(".nav-link,.nav-item").forEach((ele) => {
-//       ele.style.color = " rgb(69, 67, 66)";
-//       console.log("done");
-//     });
-//   }
-// }
-
-// let toggle = document.querySelector('input[type="checkbox"]');
-// // console.log(toggle);
-
-// toggle.addEventListener("change", (e) => {
-//   if (e.target.checked) {
-//     document.documentElement.setAttribute("data-theme", "dark");
-//   } else {
-//     document.documentElement.setAttribute("data-theme", "light");
-//   }
-// });
 
 let toggle = document.querySelector('input[type="checkbox"]');
-// console.log(toggle);
+
 
 toggle.addEventListener("change", (e) => {
   if (e.target.checked) {
@@ -66,7 +26,7 @@ toggle.addEventListener("change", (e) => {
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     document.getElementsByTagName("body")[0].style.backgroundColor = "white";
-    // console.log("cadc");
+    
   }
 });
 
